@@ -1,0 +1,38 @@
+<%- include('partials/header'); %>
+
+  <h1>Home</h1>
+  <p>
+    <%= homeStartContent %>
+  </p>
+  <div class="row">
+    <% for(var i=0 ; i<postList.length ;i++){ %>
+      <div class="col-sm-6 shadow p-3 mb-5 bg-white rounded  myCard">
+        <div class="card  shadow p-3 mb-5 bg-info rounded">
+          <div class="card-body card-text-align">
+            <h2 class="card-title">
+              <%=postList[i].title%>
+            </h2>
+            <p class="card-text">
+              <%=postList[i].content.substr(0,50) + "..." %>
+            </p>
+            <a href="/posts/<%=postList[i].title %>" class="btn btn-primary my-button">Read More</a>
+            <form action="/posts/delete" method="post" class="myForm" style="display: inline-block;">
+              <div class="item">
+                <button class="btn btn-danger" type="submit">X</button>
+                <input type="hidden" name="checkbox" value="<%=postList[i]._id%>"></input>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <% }; %>
+  </div>
+  </div>
+  <div class="footer-padding"></div>
+  <div class="footer">
+    <p>Created By Kishlay</p>
+  </div>
+  </div>
+  </body>
+
+  </html>

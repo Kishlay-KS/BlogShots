@@ -1,0 +1,94 @@
+/* body{
+    background-color: gray;
+} */
+.carasal-image{
+    object-fit: cover;
+    object-position: center;
+    height: 40vh;
+    overflow: hidden;
+}
+.bg-image{
+    background-size: cover;
+    min-height: 50vh;
+}
+@media (max-width:768px) {
+    .bg-image{
+        min-height: 30vh;
+    }
+}
+body {
+    color: white;
+    display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin:0;
+    background-color: black;
+  }
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+.bg-white{
+    background-color: white;
+}
+.my-button{
+    margin-right: 420px;
+    margin-bottom: 0;
+}
+.my-not{
+    bottom: 0;
+}
+.footer-padding {
+	padding-bottom: 60px;
+}
+.myCard{
+    margin-top: 5px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+}
+.footer {
+    margin-top:auto;
+    height:50px;
+    text-align: center;
+    width: 100%;
+    background-color: #1abc9c;
+  }
+/* .footer {
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #1abc9c;
+} */
+.card-text-align{
+    margin-top: 20px;
+    text-align: center;
+}
+.card-text{
+    color: black;
+}
+.card-title{
+    color: black;
+}
+.footer p {
+    bottom: 0;
+    text-align: center;
+	margin-top: 2px;
+	font-size: 20px;
+  color: #fff;
+}
